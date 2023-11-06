@@ -1,0 +1,113 @@
+.btn-fab {
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    z-index: 999;
+    border-radius: 50%; /* Circular button */
+    width: 56px; /* FAB standard size */
+    height: 56px; /* FAB standard size */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 2px 5px 0 rgba(0,0,0,0.26); /* Material Design shadow */
+  }
+  
+  /* Optional: Add a transition for the button to give a nice effect when it appears */
+  .btn-fab {
+    transition: transform 0.1s ease-in-out;
+  }
+  
+  .btn-fab:hover {
+    transform: scale(1.1);
+  }
+  
+
+  #chatbot {
+    position: fixed;
+    bottom: 80px; /* Adjust this value as needed, should be higher than the FAB button */
+    right: 20px; /* Align to the right, same as the FAB button */
+    width: 500px; /* Set the width you desire */
+    z-index: 998; /* Ensure it's below the FAB but above other content */
+    display: none; /* Initially hidden */
+  }
+  
+  #chatbot.show {
+    display: block; /* Show when triggered */
+  }
+  
+  #chatbot-messages {
+    height: 300px;
+    overflow-y: auto;
+    background-color: #f8f9fa;
+    border: 1px solid #ddd;
+    padding: 10px;
+    margin-bottom: 10px;
+  }
+  
+  .chatbot-questions {
+    margin-top: 10px;
+  }
+  
+  .question-btn {
+    margin: 5px;
+    display: block; /* Make the buttons fill the width of the container */
+  }
+  #chatbot {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2); /* This adds the elevation effect */
+    border-radius: 8px; /* Optional: adds rounded corners */
+    background-color: #ffffff; /* Change this to your preferred background color */
+    overflow: hidden; /* Ensures the shadow doesn't get clipped */
+  }
+  
+  .card-body {
+    background-color: #f9f9f9; /* Slightly off-white background for the chat area */
+    padding: 15px; /* Adjust padding as needed */
+  }
+  
+  #chatbot-messages {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Aligns children to the left by default */
+    height: 300px;
+    overflow-y: auto;
+    background-color: #f8f9fa;
+    padding: 10px;
+    margin-bottom: 10px;
+  }
+  
+  
+  .user-message {
+    align-self: flex-end; /* Aligns user messages to the right */
+    background-color: #007bff; /* Example: a shade of blue for user messages */
+    color: #ffffff; /* White text color for better readability on dark backgrounds */
+    padding: 10px;
+    margin: 5px;
+    border-radius: 10px; /* Rounded corners for a modern look */
+    max-width: 80%; /* Limits the width of the message */
+    margin-left: auto; /* Ensures the message sticks to the right */
+    display: block; /* Ensures the div is treated as a block-level element */
+    box-shadow: 0 2px 4px rgba(0, 123, 255, 0.3); /* Optional: subtle shadow for depth */
+  }
+  
+  .bot-message {
+    align-self: flex-start; /* Aligns bot messages to the left */
+    background-color: #e2f0d9; /* Lighter green background for bot messages */
+    color: #333333; /* Darker text color for better readability on light backgrounds */
+    padding: 10px;
+    margin: 5px;
+    border-radius: 10px; /* Rounded corners for a modern look */
+    max-width: 80%; /* Limits the width of the message */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  }
+  
+  .question-btn {
+    margin: 5px;
+    display: block; /* Make the buttons fill the width of the container */
+  }
+
+  .chatbot-header {
+    padding: 10px;
+    border-bottom: 1px solid #ddd; /* Adds a line to separate the header */
+    margin-bottom: 10px; /* Spacing between header and messages */
+  }
+  
